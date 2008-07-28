@@ -86,11 +86,11 @@ C<format_datetime> is returned.
 
 =head1 METHODS
 
-=head1 new
+=head2 new
 
 Called by TT to create a new formatter.
 
-=head1 format($datetime)
+=head2 format($datetime)
 
 Formats C<$datetime>.
 
