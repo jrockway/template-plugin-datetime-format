@@ -1,8 +1,4 @@
 cover_db
-META.yml
-Makefile
-blib
-inc
-pm_to_blib
-MANIFEST
-Makefile.old
+TAGS
+Template-Plugin-DateTime-Format*
+.build
