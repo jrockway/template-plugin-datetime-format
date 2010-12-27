@@ -89,18 +89,6 @@ Called by TT to create a new formatter.
 
 Formats C<$datetime>.
 
-=head1 REVISION CONTROL
-
-The source code is stored in the C<jrock.us> git repository.  You can
-browse the source code at
-L<http://git.jrock.us/?p=Template-Plugin-DateTime-Format.git;a=summary>.
-
-If you'd like to make changes, clone the repository:
-
-  $ git clone git://git.jrock.us/Template-Plugin-DateTime-Format
-
-and mail me the patches.  Thanks in advance!
-
 =head1 AUTHOR
 
 Jonathan Rockway C<< <jrockway@cpan.org> >>
