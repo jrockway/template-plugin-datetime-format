@@ -36,7 +36,7 @@ throws_ok { render '[% USE foo = DateTime::Format() %]' }
   qr/need class name/, 'cannot create formatter without class';
 
 throws_ok { render '[% USE foo = DateTime::Format("This::Is::Not::A::Class") %]' }
-  qr/Could not load class/, 'cannot create formatter with bogus class name';
+  qr/Can't locate/, 'cannot create formatter with bogus class name';
 
 is render '[% USE foo = DateTime::Format("DateTime::Format::Foo") %][% foo.format(date) %]', 'the foo formatter';
 
