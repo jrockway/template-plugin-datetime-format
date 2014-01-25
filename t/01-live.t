@@ -3,6 +3,7 @@ use warnings;
 use Test::More tests => 4;
 use Test::Exception;
 
+use Class::Load;
 use DateTime;
 use Template;
 
@@ -42,7 +43,7 @@ is render '[% USE foo = DateTime::Format("DateTime::Format::Foo") %][% foo.forma
 
 SKIP: {
     skip "need DateTime::Format::Strptime", 1
-      unless eval { Class::MOP::load_class('DateTime::Format::Strptime') };
+      unless eval { Class::Load::load_class('DateTime::Format::Strptime') };
    is render q|[% USE f = DateTime::Format('DateTime::Format::Strptime', |.
              q|{ pattern => '%Y' }) %][% f.format(date) %]|,
     '1985', 'Strptime example works';
